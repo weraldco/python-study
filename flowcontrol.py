@@ -48,5 +48,14 @@
 
 
 ## For loop
+# total = 0
+# for i in range(101):
+#     total = total + i
 
+#     print( str(i) + " : " + str(total))
 
+# print (total)
+import random
+
+for i in range(0, 10):
+    print(random.randint(0,100))
