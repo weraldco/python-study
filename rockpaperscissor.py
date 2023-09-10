@@ -14,6 +14,7 @@ print ("ROCK, PAPER, SCISSOR")
 user_score = 0
 computer_score = 0
 draw = 0
+player_text = ""
 
 computer_choice = ["r","p","s"]
 
@@ -69,9 +70,11 @@ for i in range(1,6):
     elif player == "p" and computer_pick == "s":
         print("You lose!")
         computer_score = computer_score + 1
-    else:
+    elif player == computer_pick:
         print("It's a draw!")
         draw = draw + 1
+    else:
+        print("Invalid input")
 
 print("FINAL SCORE: " + str(user_score) + " Wins, " + str(computer_score) + " Losses, " + str(draw) + " Ties ")
 if user_score > computer_score:
